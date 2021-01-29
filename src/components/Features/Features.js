@@ -66,7 +66,7 @@ const Features = () => (
     </div>
 
     <div className="container">
-      <div className="row">
+      <div className="rowCustom">
 
         {featuresData.map(feat => (
           <div key={feat.id} className="col-md-6 col-lg-3">

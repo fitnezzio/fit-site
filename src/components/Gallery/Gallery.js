@@ -2,6 +2,7 @@ import React from 'react';
 import Section from 'components/Section';
 import SectionTitle from 'components/SectionTitle';
 import Separator from 'components/Separator';
+import Slider from 'components/Slider';
 
 
 const Gallery = () => (
@@ -15,7 +16,7 @@ const Gallery = () => (
     </div>
 
     <div className="container">
-      Aqui deve ser o carrousel
+      <Slider/>
     </div>
 
   </Section>

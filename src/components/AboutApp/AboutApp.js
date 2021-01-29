@@ -34,9 +34,9 @@ const Image = styled.img`
 
 const AboutApp = () => (
   <Section>
-    <div className='row'>
+    <div className='rowCustom'>
 
-      <div className='row justify-content-center'>
+      <div className='rowCustom justify-content-center'>
 
         <div className='col-md-5 col-lg-3'>
           <Image src={screenshot} alt='About'/>

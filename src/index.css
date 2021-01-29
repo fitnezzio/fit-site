@@ -63,3 +63,10 @@ p {
 span {
   letter-spacing: 1px;
 }
+
+.rowCustom {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
