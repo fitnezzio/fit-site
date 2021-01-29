@@ -1,13 +1,16 @@
 import React from 'react';
 
-import logo from './logo.svg';
-import './App.css';
+import 'assets/bootstrap.min.css'
+
+import AboutApp from 'components/AboutApp';
+import Features from 'components/Features';
+import Gallery from 'components/Gallery';
 
 const App = () => (
   <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo"/>
-    </header>
+    <AboutApp/>
+    <Features/>
+    <Gallery/>
   </div>
 );
 

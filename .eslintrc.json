@@ -8,7 +8,10 @@
     "airbnb",
     "eslint:recommended",
     "prettier",
-    "prettier/react"
+    "prettier/react",
+    "react-app",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -75,7 +78,9 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".android.js", ".ios.js", ".web.js"],
+        "extensions": [
+          ".js"
+        ],
         "moduleDirectory": [
           "node_modules",
           "src"
