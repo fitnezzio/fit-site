@@ -4,25 +4,23 @@ import 'keen-slider/keen-slider.min.css';
 import styled from 'styled-components';
 
 const images = [
-  {icon: 'https://images.unsplash.com/photo-1590004953392-5aba2e72269a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80', alt: 'Aa'},
-  {icon: 'https://images.unsplash.com/photo-1590004845575-cc18b13d1d0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80', alt: 'Bb'},
-  {icon: 'https://images.unsplash.com/photo-1590004987778-bece5c9adab6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80', alt: 'Cc'},
-  {icon: 'https://images.unsplash.com/photo-1590005176489-db2e714711fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80', alt: 'Dd'},
+  {icon: 'https://play-lh.googleusercontent.com/h-hOX1TFG8qG2tvuj1BauUMtE6Dslx4f7QkNXPc1DkiGzr6nGVuZaBM20lRcWQw9mtI', alt: 'Aa'},
+  {icon: 'https://play-lh.googleusercontent.com/S4qW85mt3Hq02FOC00DtBCKzGBkfNnygIUbxJev8eoqQd5qsKq4384ic-OtNLJjVhsE', alt: 'Bb'},
+  {icon: 'https://play-lh.googleusercontent.com/XNUIZiO9cjDyCMdxt-4PsL8iCT8Sg1R2fQtbbor42d1bb-stG20zqWR7ola1pOSUb_o', alt: 'Cc'},
+  {icon: 'https://play-lh.googleusercontent.com/9evpXBlV390C6qWPIXSiGJjezJeOus8KygXTLnSwtnc4yvEzipD2sGEdwAlBJlQs1A', alt: 'Dd'},
+  {icon: 'https://play-lh.googleusercontent.com/gI-Jw4nlaFKi_s8smxjignEkzh6gVP0PwGE5VNFZvbafoSeoFvA7qcyJklVyuChZ8vMR', alt: 'Ee'},
 ];
 
 const LazySlider = styled.div`
-  height: 50vw;
-  background: rgb(131, 168, 52) url("https://keen-slider.io/images/loader.svg") no-repeat center;
+  height: 500px;
+  color: rgb(131, 168, 52);
+  font-weight: 700;
+  background: url("https://keen-slider.io/images/loader.svg") no-repeat center;
   background-size: 100px;
   min-height: auto;
 
-  @media (min-width: 768px) {
-    height: 600px;
-  }
-
   img {
     background-color: transparent;
-    width: 100%;
     height: auto;
     position: absolute;
     top: 50%;
@@ -48,7 +46,7 @@ const Slider = (props) => {
     const newLoaded = [...loaded]
     newLoaded[currentSlide] = true
     setLoaded(newLoaded)
-  }, [currentSlide, loaded])
+  }, [currentSlide])
 
   return (
     <div ref={sliderRef} className="keen-slider">
