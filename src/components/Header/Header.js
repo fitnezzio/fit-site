@@ -7,26 +7,6 @@ const PullLeft = styled.div`
   float: left;
   padding: 6px 0 0 0;
 
-  h1 {
-    color: #6F636C;
-    font-family: "Philosopher", sans-serif;
-    font-size: 26px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin: 0;
-  }
-
-  h1 a {
-    color: #8CB712;
-    line-height: 1;
-    display: inline-block;
-    text-decoration: none;
-  }
-
-  h1 a span {
-    color: #6F636C;
-  }
-
   img {
     padding: 0;
     margin: 0;

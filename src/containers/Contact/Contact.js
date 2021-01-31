@@ -51,8 +51,8 @@ const SocialLinks = styled.div`
 `
 
 const SendMessage = styled.div`
-  color: #71c55d;
-  border: 1px solid #71c55d;
+  color: #08E083;
+  border: 1px solid #04A17C;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -60,8 +60,8 @@ const SendMessage = styled.div`
 `;
 
 const ErrorMessage = styled.div`
-  color: #d70b0b;
-  border: 1px solid #d70b0b;
+  color: #FF4E3A;
+  border: 1px solid #B71D26;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -100,9 +100,7 @@ const Contact = ({id}) => {
 
       window.open(`mailto:io.fitnezz@gmail.com?subject=${subject}&body=${message}`, '_blank');
     }
-
   };
-
 
   return (
     <Section id={id} className='text-center'>

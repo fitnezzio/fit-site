@@ -11,19 +11,17 @@ import four from 'assets/Gallery/four.png';
 import five from 'assets/Gallery/five.png';
 
 const images = [
-  {icon: one, alt: 'Aa'},
-  {icon: two, alt: 'Bb'},
-  {icon: three, alt: 'Cc'},
-  {icon: four, alt: 'Dd'},
-  {icon: five, alt: 'Ee'},
+  {id: 1, icon: one},
+  {id: 2, icon: two},
+  {id: 3, icon: three},
+  {id: 4, icon: four},
+  {id: 5, icon: five},
 ];
 
 const LazySlider = styled.div`
   height: 500px;
   color: rgb(131, 168, 52);
   font-weight: 700;
-  background: url("https://keen-slider.io/images/loader.svg") no-repeat center;
-  background-size: 100px;
   min-height: auto;
 
   img {
@@ -38,7 +36,7 @@ const LazySlider = styled.div`
 `
 
 const Slider = () => {
-  const { width } = useWindowSize();
+  const {width} = useWindowSize();
 
   let slidesPerView;
   if (width <= 760) {
@@ -57,10 +55,9 @@ const Slider = () => {
 
   return (
     <div ref={sliderRef} className="keen-slider">
-      {images.map((image, idx) => (
-        // eslint-disable-next-line react/no-array-index-key
-        <LazySlider key={idx} className="keen-slider__slide">
-          <img src={image.icon} alt={image.alt}/>
+      {images.map(image => (
+        <LazySlider key={image.id} className="keen-slider__slide">
+          <img src={image.icon} alt='Screenshot do app'/>
         </LazySlider>
       ))}
     </div>
