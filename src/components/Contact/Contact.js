@@ -80,7 +80,7 @@ const SendButton = styled.button`
   }
 `;
 
-const Contact = () => {
+const Contact = ({id}) => {
 
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -105,7 +105,7 @@ const Contact = () => {
 
 
   return (
-    <Section className='text-center'>
+    <Section id={id} className='text-center'>
 
       <div className="container">
         <SectionTitle className="text-center">

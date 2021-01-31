@@ -2,13 +2,20 @@ import React from 'react';
 import {useKeenSlider} from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import styled from 'styled-components';
+import useWindowSize from 'utils/useWindowSize';
+
+import one from 'assets/Gallery/one.png';
+import two from 'assets/Gallery/two.png';
+import three from 'assets/Gallery/three.png';
+import four from 'assets/Gallery/four.png';
+import five from 'assets/Gallery/five.png';
 
 const images = [
-  {icon: 'https://play-lh.googleusercontent.com/h-hOX1TFG8qG2tvuj1BauUMtE6Dslx4f7QkNXPc1DkiGzr6nGVuZaBM20lRcWQw9mtI', alt: 'Aa'},
-  {icon: 'https://play-lh.googleusercontent.com/S4qW85mt3Hq02FOC00DtBCKzGBkfNnygIUbxJev8eoqQd5qsKq4384ic-OtNLJjVhsE', alt: 'Bb'},
-  {icon: 'https://play-lh.googleusercontent.com/XNUIZiO9cjDyCMdxt-4PsL8iCT8Sg1R2fQtbbor42d1bb-stG20zqWR7ola1pOSUb_o', alt: 'Cc'},
-  {icon: 'https://play-lh.googleusercontent.com/9evpXBlV390C6qWPIXSiGJjezJeOus8KygXTLnSwtnc4yvEzipD2sGEdwAlBJlQs1A', alt: 'Dd'},
-  {icon: 'https://play-lh.googleusercontent.com/gI-Jw4nlaFKi_s8smxjignEkzh6gVP0PwGE5VNFZvbafoSeoFvA7qcyJklVyuChZ8vMR', alt: 'Ee'},
+  {icon: one, alt: 'Aa'},
+  {icon: two, alt: 'Bb'},
+  {icon: three, alt: 'Cc'},
+  {icon: four, alt: 'Dd'},
+  {icon: five, alt: 'Ee'},
 ];
 
 const LazySlider = styled.div`
@@ -30,30 +37,30 @@ const LazySlider = styled.div`
   }
 `
 
-const Slider = (props) => {
-  const [loaded, setLoaded] = React.useState([])
-  const [currentSlide, setCurrentSlide] = React.useState(0)
+const Slider = () => {
+  const { width } = useWindowSize();
+
+  let slidesPerView;
+  if (width <= 760) {
+    slidesPerView = 1;
+  } else if (width > 760 && width <= 990) {
+    slidesPerView = 2;
+  } else {
+    slidesPerView = 3;
+  }
 
   const [sliderRef] = useKeenSlider({
-    afterChange(s) {
-      setCurrentSlide(s.details().relativeSlide)
-    },
-    loop: true,
+    slidesPerView,
+    loop: false,
     initial: 1,
-  })
-
-  React.useEffect(() => {
-    const newLoaded = [...loaded]
-    newLoaded[currentSlide] = true
-    setLoaded(newLoaded)
-  }, [currentSlide])
+  });
 
   return (
     <div ref={sliderRef} className="keen-slider">
       {images.map((image, idx) => (
         // eslint-disable-next-line react/no-array-index-key
         <LazySlider key={idx} className="keen-slider__slide">
-          <img src={loaded[idx] ? image.icon : ''} alt={image.alt}/>
+          <img src={image.icon} alt={image.alt}/>
         </LazySlider>
       ))}
     </div>

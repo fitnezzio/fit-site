@@ -5,8 +5,8 @@ import Separator from 'components/Separator';
 import Slider from 'components/Slider';
 
 
-const Gallery = () => (
-  <Section className='text-center'>
+const Gallery = ({id}) => (
+  <Section id={id} className='text-center'>
 
     <div className="container">
       <SectionTitle className='text-center'>

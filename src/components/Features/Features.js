@@ -55,8 +55,8 @@ const featuresData = [
   },
 ];
 
-const Features = () => (
-  <Section className='text-center'>
+const Features = ({id}) => (
+  <Section id={id} className='text-center'>
 
     <div className='container'>
       <SectionTitle className='text-center'>

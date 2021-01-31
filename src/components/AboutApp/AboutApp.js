@@ -32,8 +32,8 @@ const Image = styled.img`
   max-width: 100%;
 `;
 
-const AboutApp = () => (
-  <Section>
+const AboutApp = ({id}) => (
+  <Section id={id}>
     <div className='rowCustom'>
 
       <div className='rowCustom justify-content-center'>
