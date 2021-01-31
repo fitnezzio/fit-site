@@ -5,7 +5,7 @@ const Section = styled.section`
   padding-top: 80px;
 
   @media (max-width: 992px) {
-    padding-top: 40px;
+    padding-top: 56px;
     padding-bottom: 40px;
   }
 `;

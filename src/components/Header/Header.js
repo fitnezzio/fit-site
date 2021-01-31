@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import logo from 'assets/logo.svg'
+
 const PullLeft = styled.div`
   float: left;
   padding: 6px 0 0 0;
@@ -32,7 +34,7 @@ const PullLeft = styled.div`
 `;
 
 const HeaderStyled = styled.header`
-  background: #fff;
+  background: #eee;
   position: fixed;
   left: 0;
   top: 0;
@@ -40,15 +42,16 @@ const HeaderStyled = styled.header`
   height: 48px;
   z-index: 3;
   transition: all 0.5s ease;
+  box-shadow: 0 8px 6px -6px #b4b3b3;
 `
 
 const Header = () => (
-  <HeaderStyled className="header header-hide">
+  <HeaderStyled>
     <div className="container">
       {/* eslint-disable jsx-a11y/anchor-is-valid */}
 
       <PullLeft id="logo">
-        <h1><a href="#about-app" className="scrollto"><span>Fitnezz</span>.io</a></h1>
+        <a href="#about-app"><img src={logo} alt='Logo' height={30}/></a>
       </PullLeft>
 
     </div>

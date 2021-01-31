@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import {ChevronRight} from 'react-feather'
+
 import screenshot from 'assets/AboutApp/screenshot.png';
 import Section from 'components/Section';
 
@@ -8,14 +10,15 @@ const AboutContent = styled.div`
   padding-top: 60px;
 
   h2 {
-    color: #252525;
+    color: #8cb712;
     font-size: 39px;
-    font-weight: 100;
+    font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 20px;
   }
 
   span {
+    color: #6f6e6c;
     font-weight: 700;
   }
 
@@ -26,11 +29,24 @@ const AboutContent = styled.div`
   ul li .fa {
     padding-right: 20px;
   }
+
+  p {
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
 `;
 
 const Image = styled.img`
   max-width: 100%;
 `;
+
+const destaques = [
+  {id: 1, text: 'Avaliações físicas'},
+  {id: 2, text: 'Acompanhamento de medidas'},
+  {id: 3, text: 'Acompanhamento de Alunos'},
+  {id: 4, text: 'Fácil de usar'}
+];
 
 const AboutApp = ({id}) => (
   <Section id={id}>
@@ -52,10 +68,9 @@ const AboutApp = ({id}) => (
             </p>
 
             <ul className='list-unstyled'>
-              <li><i className='fa fa-angle-right'/>Avaliações físicas</li>
-              <li><i className='fa fa-angle-right'/>Acompanhamento de medidas</li>
-              <li><i className='fa fa-angle-right'/>Acompanhamento de Alunos</li>
-              <li><i className='fa fa-angle-right'/>Fácil de usar</li>
+              {destaques.map(destaque => (
+                <li key={destaque.id} style={{fontWeight: 700}}><ChevronRight size={16}/>{destaque.text}</li>
+              ))}
             </ul>
 
           </AboutContent>
