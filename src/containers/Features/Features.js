@@ -30,28 +30,36 @@ const FeatBlock = styled.div`
 const ImgFluid = styled.div`
   margin-bottom: 30px;
 `
+const syncColor = '#4695FC';
+const evaluationColor = '#FFB600';
+const studentColor = '#72D328';
+const ratingColor = '#FF5028';
 
 const featuresData = [
   {
     id: 1,
     title: 'Sincronizado',
     description: 'Tenha os seus dados atualizados em qualquer dispositivo',
-    icon: <Cloud size={60}/>
+    color: syncColor,
+    icon: <Cloud size={60} color={syncColor}/>
   }, {
     id: 2,
     title: 'Avaliações',
     description: 'Faça quantas avaliações quiser e acompanhe sua evolução',
-    icon: <BarChart size={60}/>
+    color: evaluationColor,
+    icon: <BarChart size={60} color={evaluationColor}/>
   }, {
     id: 3,
     title: 'Alunos',
     description: 'Cadastre todos os seus alunos e acompanhe cada um',
-    icon: <Users size={60}/>
+    color: studentColor,
+    icon: <Users size={60} color={studentColor}/>
   }, {
     id: 4,
     title: 'Classificações',
     description: 'Veja a classificação das avaliações em diversos infográficos',
-    icon: <Award size={60}/>
+    color: ratingColor,
+    icon: <Award size={60} color={ratingColor}/>
   },
 ];
 
@@ -74,7 +82,7 @@ const Features = ({id}) => (
               <ImgFluid>
                 {feat.icon}
               </ImgFluid>
-              <h4>{feat.title}</h4>
+              <h4 style={{color: feat.color, fontSize: 20}}>{feat.title}</h4>
               <p>{feat.description}</p>
             </FeatBlock>
           </div>
