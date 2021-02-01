@@ -7,6 +7,7 @@ import Features from 'containers/Features';
 import Gallery from 'containers/Gallery';
 import Contact from 'containers/Contact';
 import Header from 'components/Header';
+import Team from './containers/Team';
 
 const App = () => (
   <div style={{backgroundColor: '#eee'}}>
@@ -14,6 +15,7 @@ const App = () => (
     <AboutApp id='about-app'/>
     <Features id='features'/>
     <Gallery id='gallery'/>
+    <Team id='team'/>
     <Contact id='contact'/>
   </div>
 );
