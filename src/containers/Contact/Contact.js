@@ -7,6 +7,7 @@ import {Facebook, Instagram, Mail, MapPin, Play} from 'react-feather';
 import Section from 'components/Section';
 import SectionTitle from 'components/SectionTitle';
 import Separator from 'components/Separator';
+import Button from 'components/Button';
 
 const Info = styled.div`
   color: #222;
@@ -24,7 +25,7 @@ const Info = styled.div`
     font-size: 14px;
   }
 
-`
+`;
 
 const SocialLinks = styled.div`
   padding-bottom: 20px;
@@ -48,7 +49,7 @@ const SocialLinks = styled.div`
     background: #6a8918;
     color: #fff;
   }
-`
+`;
 
 const SendMessage = styled.div`
   color: #08E083;
@@ -66,18 +67,6 @@ const ErrorMessage = styled.div`
   padding: 15px;
   font-weight: 600;
   margin-bottom: 15px;
-`;
-
-const SendButton = styled.button`
-  background: #8CB712;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-
-  &:hover {
-    background: #b1de62;
-  }
 `;
 
 const Contact = ({id}) => {
@@ -161,7 +150,7 @@ const Contact = ({id}) => {
                             rows="5" className="form-control"/>
                 </div>
                 <div className="text-center">
-                  <SendButton onClick={sendEmail}>Enviar mensagem</SendButton>
+                  <Button onClick={sendEmail}>Enviar mensagem</Button>
                 </div>
               </div>
             </div>
