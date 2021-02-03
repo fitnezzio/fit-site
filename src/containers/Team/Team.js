@@ -25,9 +25,10 @@ const TeamContent = styled.div`
     font-weight: 500;
   }
 
-  h5 {
+  p {
     color: #6f6e6c;
     font-weight: 600;
+    font-size: 1.25rem;
   }
 `;
 
@@ -94,7 +95,7 @@ const Team = ({id}) => (
               <Photo src={member.photo} className='img-responsive' alt={`${member.name} photo's`}/>
               <TeamContent>
                 <span>{member.role}</span>
-                <h5>{member.name}</h5>
+                <p>{member.name}</p>
               </TeamContent>
             </TeamBlock>
           </div>

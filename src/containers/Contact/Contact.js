@@ -123,10 +123,22 @@ const Contact = ({id}) => {
             </Info>
 
             <SocialLinks>
-              <a href="https://www.facebook.com/fitnezzio" target='_blank' rel='noreferrer'><Facebook/></a>
-              <a href="https://www.instagram.com/fitnezz.io" target='_blank' rel='noreferrer'><Instagram/></a>
-              <a href="https://play.google.com/store/apps/details?id=br.com.ava" target='_blank' rel='noreferrer'><Play/></a>
-              <a href="https://github.com/fitnezzio" target='_blank' rel='noreferrer'><GitHub/></a>
+              <a href="https://www.facebook.com/fitnezzio" target='_blank' rel='noreferrer'
+                 name='Pagina no Facebook'>
+                <Facebook/>
+              </a>
+              <a href="https://www.instagram.com/fitnezz.io" target='_blank' rel='noreferrer'
+                 name='Pagina no Instagram'>
+                <Instagram/>
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=br.com.ava" target='_blank' rel='noreferrer'
+                 name='Pagina na Google Play'>
+                <Play/>
+              </a>
+              <a href="https://github.com/fitnezzio" target='_blank' rel='noreferrer'
+                 name='Pagina no Github'>
+                <GitHub/>
+              </a>
             </SocialLinks>
 
           </div>

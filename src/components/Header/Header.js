@@ -31,7 +31,7 @@ const Header = () => (
       {/* eslint-disable jsx-a11y/anchor-is-valid */}
 
       <PullLeft id="logo">
-        <a href="#about-app"><img src={logo} alt='Logo' height={30}/></a>
+        <a href="#about-app"><img src={logo} alt='Logo' height={30} width={160}/></a>
       </PullLeft>
 
     </div>

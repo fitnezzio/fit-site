@@ -88,7 +88,11 @@ const Welcome = ({id}) => (
         <Button href="#about-app">Sobre o app</Button>
         <div>
           <Link href="#"><ShoppingBag/> App Store (em breve)</Link>
-          <Link href="https://play.google.com/store/apps/details?id=br.com.ava" target='_blank'><Play/> Google Play</Link>
+          <Link href="https://play.google.com/store/apps/details?id=br.com.ava"
+                target='_blank'
+                rel='noreferrer'>
+            <Play/> Google Play
+          </Link>
         </div>
 
       </Container>

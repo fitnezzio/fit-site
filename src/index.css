@@ -10,6 +10,7 @@ body {
 @font-face {
   font-family: 'Coolvetica Rg';
   src: local('Coolvetica Rg'), url(assets/fonts/coolvetica_rg.ttf) format('truetype');
+  font-display: swap;
 }
 
 h1, h2, h3, h4, h5, h6 {
