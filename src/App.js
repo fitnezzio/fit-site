@@ -8,7 +8,7 @@ import Gallery from 'containers/Gallery';
 import Contact from 'containers/Contact';
 import Header from 'components/Header';
 import Team from 'containers/Team';
-import Welcome from './containers/Welcome';
+import Welcome from 'containers/Welcome';
 
 
 const App = () => (

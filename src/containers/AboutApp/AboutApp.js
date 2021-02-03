@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 import {ChevronRight} from 'react-feather'
 
-import screenshot from 'assets/AboutApp/screenshot.png';
 import Section from 'components/Section';
+import screenshot from 'assets/AboutApp/screenshot.png';
 
 const AboutContent = styled.div`
   padding-top: 60px;

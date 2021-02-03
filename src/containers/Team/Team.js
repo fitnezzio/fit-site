@@ -26,7 +26,7 @@ const TeamContent = styled.div`
   }
 
   h5 {
-    color:  #6f6e6c;
+    color: #6f6e6c;
     font-weight: 600;
   }
 `;
