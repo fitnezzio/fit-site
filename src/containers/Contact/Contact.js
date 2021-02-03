@@ -2,12 +2,13 @@ import React, {useState} from 'react';
 
 import styled from 'styled-components';
 
-import {Facebook, Instagram, Mail, MapPin, Play} from 'react-feather';
+import {Facebook, GitHub, Instagram, Mail, MapPin, Play} from 'react-feather';
 
 import Section from 'components/Section';
 import SectionTitle from 'components/SectionTitle';
 import Separator from 'components/Separator';
 import Button from 'components/Button';
+import Title from 'components/Title';
 
 const Info = styled.div`
   color: #222;
@@ -96,9 +97,9 @@ const Contact = ({id}) => {
 
       <div className="container">
         <SectionTitle className="text-center">
-          <h2>Contato</h2>
+          <Title>Contato</Title>
           <Separator>
-            Se você tiver algum problema ou sugestão, entre em contato conosco pelos canais oficiais
+            Caso tenha alguma sugestão, entre em contato conosco pelos canais oficiais
           </Separator>
         </SectionTitle>
       </div>
@@ -125,6 +126,7 @@ const Contact = ({id}) => {
               <a href="https://www.facebook.com/fitnezzio" target='_blank' rel='noreferrer'><Facebook/></a>
               <a href="https://www.instagram.com/fitnezz.io" target='_blank' rel='noreferrer'><Instagram/></a>
               <a href="https://play.google.com/store/apps/details?id=br.com.ava" target='_blank' rel='noreferrer'><Play/></a>
+              <a href="https://github.com/fitnezzio" target='_blank' rel='noreferrer'><GitHub/></a>
             </SocialLinks>
 
           </div>

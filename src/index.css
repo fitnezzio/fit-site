@@ -1,12 +1,15 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #eee;
   color: #333;
+}
+
+@font-face {
+  font-family: 'Coolvetica Rg';
+  src: local('Coolvetica Rg'), url(assets/fonts/coolvetica_rg.ttf) format('truetype');
 }
 
 h1, h2, h3, h4, h5, h6 {

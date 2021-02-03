@@ -12,14 +12,13 @@ const AboutContent = styled.div`
   h2 {
     color: #8cb712;
     font-size: 39px;
-    font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    font-family: 'Coolvetica Rg', sans-serif;
   }
 
   span {
     color: #6f6e6c;
-    font-weight: 700;
   }
 
   ul li {

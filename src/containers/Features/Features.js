@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Section from 'components/Section';
 import SectionTitle from 'components/SectionTitle';
 import Separator from 'components/Separator';
+import Title from 'components/Title';
 
 const FeatBlock = styled.div`
   background: #fff none repeat scroll 0 0;
@@ -29,7 +30,8 @@ const FeatBlock = styled.div`
 
 const ImgFluid = styled.div`
   margin-bottom: 30px;
-`
+`;
+
 const syncColor = '#4695FC';
 const evaluationColor = '#FFB600';
 const studentColor = '#72D328';
@@ -51,7 +53,7 @@ const featuresData = [
   }, {
     id: 3,
     title: 'Alunos',
-    description: 'Cadastre todos os seus alunos e acompanhe cada um',
+    description: 'Cadastre todos os alunos e acompanhe cada um',
     color: studentColor,
     icon: <Users size={60} color={studentColor}/>
   }, {
@@ -68,7 +70,7 @@ const Features = ({id}) => (
 
     <div className='container'>
       <SectionTitle className='text-center'>
-        <h2>Destaques</h2>
+        <Title>Destaques</Title>
         <Separator>Confira a seguir os destaques mais incríveis do Fitnezz.io</Separator>
       </SectionTitle>
     </div>

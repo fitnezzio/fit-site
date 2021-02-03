@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Section from 'components/Section';
 import SectionTitle from 'components/SectionTitle';
 import Separator from 'components/Separator';
+import Title from 'components/Title';
 
 import JoaoGabriel from 'assets/Team/JoaoGabriel.jpeg';
 import GabrielDeCarvalho from 'assets/Team/GabrielDeCarvalho.jpeg';
@@ -79,7 +80,7 @@ const Team = ({id}) => (
 
     <div className='container'>
       <SectionTitle className='text-center'>
-        <h2>Time</h2>
+        <Title>Time</Title>
         <Separator>Conheça os membros do time Fitnezz.io</Separator>
       </SectionTitle>
     </div>

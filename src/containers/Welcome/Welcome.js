@@ -1,12 +1,12 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import {Facebook, GitHub, Instagram, Play, ShoppingBag} from 'react-feather';
+import {Play, ShoppingBag} from 'react-feather';
 
 import Section from 'components/Section';
 import Button from 'components/Button';
 
-import Logo from 'assets/Welcome/logo_sem_nome.png'
+import Logo from 'assets/Welcome/logo_sem_nome.png';
 
 
 const Base = styled.div`
@@ -19,6 +19,10 @@ const Base = styled.div`
 
   @media (min-width: 1025px) {
     background-attachment: fixed;
+  }
+
+  @media (max-width: 768px) {
+    height: calc(55vh);
   }
 `;
 
@@ -38,9 +42,9 @@ const Container = styled.div`
 const Title = styled.h1`
   margin: 0 0 10px 0;
   font-size: 48px;
-  font-weight: 700;
   line-height: 56px;
-  color: #8CB712;
+  color: #6F6E6C;
+  font-family: 'Coolvetica Rg', sans-serif;
 
   @media (max-width: 768px) {
     font-size: 28px;
@@ -51,6 +55,10 @@ const Title = styled.h1`
 const Image = styled.img`
   max-width: 95%;
   margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    max-width: 60%;
+  }
 `;
 
 const Link = styled.a`
@@ -79,13 +87,8 @@ const Welcome = ({id}) => (
         <Image src={Logo} alt='Logo'/>
         <Button href="#about-app">Sobre o app</Button>
         <div>
-          <Link href="https://play.google.com/store/apps/details?id=br.com.ava" target='_blank'><Play/> Google Play</Link>
           <Link href="#"><ShoppingBag/> App Store (em breve)</Link>
-          <Link href="https://github.com/fitnezzio" target='_blank'><GitHub/> Github</Link>
-        </div>
-        <div style={{paddingTop: 10}}>
-          <Link href="https://www.facebook.com/fitnezzio/" target='_blank'><Facebook/> Facebook</Link>
-          <Link href="https://www.instagram.com/fitnezz.io/" target='_blank'><Instagram/> Instagram</Link>
+          <Link href="https://play.google.com/store/apps/details?id=br.com.ava" target='_blank'><Play/> Google Play</Link>
         </div>
 
       </Container>
