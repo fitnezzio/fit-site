@@ -6,7 +6,7 @@ import {Play, ShoppingBag} from 'react-feather';
 import Section from 'components/Section';
 import Button from 'components/Button';
 
-import Logo from 'assets/Welcome/logo_sem_nome.png';
+import Logo from 'assets/Welcome/logo_sem_nome.webp';
 
 
 const Base = styled.div`

@@ -3,11 +3,11 @@ import {useKeenSlider} from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import styled from 'styled-components';
 
-import one from 'assets/Gallery/one.png';
-import two from 'assets/Gallery/two.png';
-import three from 'assets/Gallery/three.png';
-import four from 'assets/Gallery/four.png';
-import five from 'assets/Gallery/five.png';
+import one from 'assets/Gallery/one.webp';
+import two from 'assets/Gallery/two.webp';
+import three from 'assets/Gallery/three.webp';
+import four from 'assets/Gallery/four.webp';
+import five from 'assets/Gallery/five.webp';
 
 const images = [
   {id: 1, icon: one},
