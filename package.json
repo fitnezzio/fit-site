@@ -1,6 +1,6 @@
 {
   "name": "fit-site",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "keen-slider": "5.4.0",

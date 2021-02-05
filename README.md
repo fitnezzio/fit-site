@@ -10,7 +10,7 @@ Repositório do site do fitnezz.io
 
 | Requisito   | Utilização             |
 | :---------- | ---------------------- |
-| Node 12.x   | React Native           |
+| Node 12.x   | React                  |
 | Yarn        | Build React            |
 
 ----
